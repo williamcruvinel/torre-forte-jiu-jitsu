@@ -29,7 +29,7 @@ O projeto foi construído utilizando **HTML, CSS e JavaScript puro**, priorizand
 🔗 **Acesse o projeto:**
 
 ```
-https://seuusuario.github.io/torre-forte
+https://github.com/williamcruvinel/torre-forte-jiu-jitsu
 ```
 
 ---
