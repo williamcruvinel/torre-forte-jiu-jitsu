@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TORRE FORTE - Escola de Jiu-Jitsu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <img src="./assets/image/logo.png" alt="logo" />
+            </div>
+            <span class="logo-text">Torre <strong>Forte</strong></span>
+          </a>
+
+           <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="#sobre" class="nav-link"
+                >Sobre <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown">
+                <li><a href="#sobre">Projeto</a></li>
+                <li><a href="#sobre">Metodologia</a></li>
+                <li><a href="#sobre">Sensei</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#horarios" class="nav-link">Horários</a>
+            </li>
+            <li class="nav-item">
+              <a href="#parceiros" class="nav-link">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#competicoes" class="nav-link">Competições</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contato" class="nav-link">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contato" class="btn btn-cta">Aula Experimental</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Mais que Jiu-Jitsu, uma
+            <span class="highlight">Fortaleza</span> para a Vida
+          </h1>
+          <p class="hero-subtitle">
+            Na Torre Forte, desenvolvemos não apenas técnicas de combate, mas
+            também caráter, disciplina e resiliência para superar qualquer
+            desafio.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contato" class="btn btn-primary"
+              >Agende sua Aula Experimental</a
+            >
+            <a href="#sobre" class="btn btn-secondary">Conheça Nossa Escola</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-img">
+            <img src="./assets/image/alunos/jiu-jitsu5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <a href="#sobre"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Sobre a <span class="highlight">Torre Forte</span>
+          </h2>
+          <p class="section-subtitle">
+            Conheça nossa filosofia e método de ensino
+          </p>
+        </div>
+
+        <div class="sobre-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="projeto">Projeto</button>
+            <button class="tab-btn" data-tab="metodologia">Metodologia</button>
+            <button class="tab-btn" data-tab="sensei">Sensei</button>
+          </div>
+
+          <div class="tab-contents">
+            <div class="tab-content active" id="projeto">
+              <div class="tab-content-inner">
+                <div class="tab-image">
+                  <div class="tab-img-placeholder"><img src="./assets/image/alunos/jiu-jitsu6.jpg" alt=""></div>
+                </div>
+                <div class="tab-text">
+                  <h3>A Visão da Torre Forte</h3>
+                  <p>
+                    Nosso projeto vai além do tatame. Buscamos formar cidadãos
+                    fortes, éticos e resilientes, capazes de enfrentar os
+                    desafios da vida com coragem e sabedoria.
+                  </p>
+                  <p>
+                    Acreditamos que o Jiu-Jitsu é uma ferramenta poderosa para o
+                    desenvolvimento pessoal, trabalhando não apenas o físico,
+                    mas também a mente e o caráter.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="metodologia">
+              <div class="tab-content-inner">
+                <div class="tab-image">
+                  <div class="tab-img-placeholder"> <img src="./assets/image/alunos/jiu-jitsu1.jpg" alt=""></div>
+                </div>
+                <div class="tab-text">
+                  <h3>Como Ensinamos</h3>
+                  <p>
+                    Nossa metodologia é baseada em três pilares:
+                    <strong>Técnica</strong>, <strong>Disciplina</strong> e
+                    <strong>Respeito</strong>.
+                  </p>
+                  <p>
+                    Desenvolvemos um programa gradual e seguro, adaptado para
+                    todas as idades e níveis, sempre respeitando o tempo de
+                    aprendizado de cada aluno.
+                  </p>
+                  <ul class="tab-list">
+                    <li>
+                      <i class="fas fa-check-circle"></i> Ensino técnico
+                      progressivo
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i> Foco na segurança dos
+                      alunos
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i> Desenvolvimento do
+                      caráter
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="sensei">
+              <div class="tab-content-inner">
+                <div class="tab-image">
+                  <div class="tab-img-placeholder"><img src="./assets/image/sensei.jpg" alt=""></div>
+                </div>
+                <div class="tab-text">
+                  <h3>Sensei Lucas Navarro</h3>
+                  <p class="sensei-title">
+                    Faixa Preta 4º Grau - Campeão Mundial
+                  </p>
+                  <p>
+                    Com mais de 20 anos de experiência no Jiu-Jitsu, Sensei
+                    Lucas Navarro tem como missão transmitir não apenas as
+                    técnicas, mas os valores fundamentais da arte suave.
+                  </p>
+                  <p>
+                    Formado pela renomada Gracie Academy, já treinou atletas de
+                    elite e competidores internacionais, sempre com foco no
+                    desenvolvimento integral do ser humano.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORÁRIOS -->
+    <section class="section horarios" id="horarios">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Horários das <span class="highlight">Aulas</span>
+          </h2>
+          <p class="section-subtitle">Encontre a turma ideal para você</p>
+        </div>
+
+        <div class="horarios-grid">
+          <div class="horario-card">
+            <div class="horario-header">
+              <h3>Terça-Feira</h3>
+            </div>
+            <ul class="horario-lista">
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+            </ul>
+          </div>
+
+          <div class="horario-card">
+            <div class="horario-header">
+              <h3>Quinta-Feira</h3>
+            </div>
+            <ul class="horario-lista">
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+            </ul>
+          </div>
+
+          <div class="horario-card">
+            <div class="horario-header">
+              <h3>Sábado</h3>
+            </div>
+            <ul class="horario-lista">
+              <li>08:00 - 9:45 <span>Sentinela (8 á 13 anos)</span></li>
+              <li>09:45 - 11:00 <span>Atalaia (4 á 7 anos)</span></li>
+              <li>--<span>--</span></li>
+              <li>--<span>--</span></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="section parceiros" id="parceiros">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Nossos <span class="highlight">Parceiros</span>
+          </h2>
+          <p class="section-subtitle">Marcas que apoiam nossa missão</p>
+        </div>
+
+        <div class="carrossel-container">
+          <div class="carrossel" id="carrossel">
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/caravan.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/flexblog.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/lescone.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/surfbot.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/dogs.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/wildbeast.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/handel.svg" alt=""></div>
+            </div>
+            <div class="carrossel-item">
+              <div class="parceiro-logo"><img src="./assets/image/parceiros/ranek.svg" alt=""></div>
+            </div>
+          </div>
+
+          <button class="carrossel-btn prev" id="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carrossel-btn next" id="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETIÇOES -->
+    <section class="section competicoes" id="competicoes">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Nossas <span class="highlight">Competições</span>
+          </h2>
+          <p class="section-subtitle">Momentos de glória e superação</p>
+        </div>
+
+        <div class="galeria-grid">
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <img src="./assets/image/alunos/jiu-jitsu1.jpg" />
+            </div>
+            <div class="galeria-overlay">
+              <h4>Campeonato Brasileiro 2023</h4>
+              <p>5 medalhas de ouro</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <img src="./assets/image/alunos/jiu-jitsu2.jpg" />
+            </div>
+            <div class="galeria-overlay">
+              <h4>Copa Internacional</h4>
+              <p>Time adulto campeão</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <img src="./assets/image/alunos/jiu-jitsu5.jpg" />
+            </div>
+            <div class="galeria-overlay">
+              <h4>Campeonato Estadual</h4>
+              <p>14 atletas no pódio</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <img src="./assets/image/alunos/jiu-jitsu6.jpg" />
+            </div>
+            <div class="galeria-overlay">
+              <h4>Kids Championship</h4>
+              <p>Futuras promessas</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <img src="./assets/image/alunos/jiu-jitsu8.jpg" />
+            </div>
+            <div class="galeria-overlay">
+              <h4>Pan-Americano</h4>
+              <p>Prata e bronze</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <img src="./assets/image/alunos/jiu-jitsu9.jpg" />
+            </div>
+            <div class="galeria-overlay">
+              <h4>Mundial de Masters</h4>
+              <p>Ouro na categoria</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+          <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-img"></div>
+            <div class="lightbox-caption">
+              <h3 id="lightbox-title">Título da Imagem</h3>
+              <p id="lightbox-description">Descrição da imagem</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATOS -->
+    <section class="section contato" id="contato">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Entre em <span class="highlight">Contato</span>
+          </h2>
+          <p class="section-subtitle">
+            Venha nos visitar ou agende sua aula experimental
+          </p>
+        </div>
+
+        <div class="contato-grid">
+          <div class="contato-form">
+            <form id="form-contato">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="nome"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Seu melhor e-mail"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="telefone"
+                  placeholder="Seu telefone com WhatsApp"
+                />
+              </div>
+              <div class="form-group">
+                <select id="assunto" required>
+                  <option value="" disabled selected>Assunto do contato</option>
+                  <option value="aula-experimental">Aula Experimental</option>
+                  <option value="horarios">Horários e Turmas</option>
+                  <option value="eventos">Eventos e Competições</option>
+                  <option value="outro">Outro assunto</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="mensagem"
+                  rows="5"
+                  placeholder="Sua mensagem..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+
+          <div class="contato-info">
+            <div class="info-card">
+              <h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
+              <p>
+                Rua José da Silva, 3601<br />Jardim Integração<br />Franca
+                - SP
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3><i class="fas fa-phone"></i> Telefone</h3>
+              <p>(16) 99999-8888<br />(16) 3333-4444</p>
+            </div>
+
+            <div class="info-card">
+              <h3><i class="fas fa-envelope"></i> E-mail</h3>
+              <p>contato@torrefortejiujitsu.com.br</p>
+            </div>
+
+            <div class="info-card">
+              <h3><i class="fas fa-clock"></i> Horário de Funcionamento</h3>
+              <p>
+                Quinta-Feira: 19h às 21h<br />Sábado: 8h às 11h<br />
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTAO WHATS -->
+    <div class="whatsapp-float">
+      <a
+        href="https://wa.me/5511999998888?text=Olá! Gostaria de saber mais sobre a aula experimental"
+        target="_blank"
+        class="whatsapp-btn"
+      >
+        <i class="fab fa-whatsapp"></i>
+        <span>Agende pelo WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="logo">
+              <span class="logo-icon">🛡️</span>
+              <span class="logo-text">TORRE <strong>FORTE</strong></span>
+            </div>
+            <p class="footer-description">
+              Escola de Jiu-Jitsu dedicada ao desenvolvimento físico, mental e
+              emocional através das artes marciais.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links Rápidos</h3>
+            <ul class="footer-links">
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="#horarios">Horários</a></li>
+              <li><a href="#parceiros">Parceiros</a></li>
+              <li><a href="#competicoes">Competições</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Turmas</h3>
+            <ul class="footer-links">
+              <li><a href="#">Kids (4-8 anos)</a></li>
+              <li><a href="#">Kids (8-12 anos)</a></li>
+              <li><a href="#">Teens (12-16 anos)</a></li>
+              <li><a href="#">Aulas Femininas</a></li>
+              <li><a href="#">Adultos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>
+              Receba novidades sobre eventos, competições e dicas de treino.
+            </p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Seu e-mail" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 TORRE FORTE Jiu-Jitsu. Todos os direitos reservados.
+          </p>
+          <p>Desenvolvido por <span>William Cruvinel</span>.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

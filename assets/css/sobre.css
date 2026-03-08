@@ -1,0 +1,101 @@
+.sobre-tabs {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab-btn {
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-family: var(--font-title);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tab-content-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.tab-image {
+  height: 300px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.tab-img-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray);
+  position: relative;
+}
+
+.tab-img-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1635328022964-f6a38769a1c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')
+    center/cover no-repeat;
+  opacity: 0.7;
+}
+
+.sensei-title {
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.tab-list {
+  margin-top: var(--spacing-md);
+}
+
+.tab-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tab-list i {
+  color: var(--secondary);
+}

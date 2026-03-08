@@ -1,0 +1,67 @@
+.carrossel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrossel-item {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+}
+
+.parceiro-logo {
+  height: 120px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  color: var(--gray-medium);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.parceiro-logo:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  z-index: 10;
+}
+
+.carrossel-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.carrossel-btn.prev {
+  left: 0;
+}
+
+.carrossel-btn.next {
+  right: 0;
+}

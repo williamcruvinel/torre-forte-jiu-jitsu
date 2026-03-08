@@ -1,0 +1,159 @@
+@media (max-width: 992px) {
+  .hero .container,
+  .tab-content-inner,
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .carrossel-item {
+    flex: 0 0 50%;
+  }
+
+  .whatsapp-btn span {
+    display: none;
+  }
+
+  .whatsapp-btn {
+    padding: 15px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-left: var(--spacing-md);
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-link i.fa-chevron-down {
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link.active-dropdown i.fa-chevron-down {
+    transform: rotate(180deg);
+  }
+
+  /* Dropdown Mobile */
+  .dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border-top: none;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-top: 10px;
+    margin-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .dropdown.active {
+    display: block;
+    max-height: 300px;
+  }
+
+  .dropdown li:last-child {
+    border-bottom: none;
+  }
+
+  .carrossel-item {
+    flex: 0 0 100%;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 80px;
+  }
+
+  /* Overlay quando menu está aberto */
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
+}
+
+/* Mobile Pequeno (até 576px) */
+@media (max-width: 576px) {
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .horarios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carrossel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
