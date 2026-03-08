@@ -1,9 +1,6 @@
-Perfeito — vou montar uma **versão de README nível portfólio**, pensada para **recrutadores e tech leads**. Esse tipo de README valoriza o projeto, mostra suas decisões técnicas e passa mais profissionalismo no GitHub.
 
-Você pode colar direto no `README.md`.
 
 ---
-
 # 🥋 Torre Forte — Landing Page Escola de Jiu-Jitsu
 
 ![status](https://img.shields.io/badge/status-concluído-success)
